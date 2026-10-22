@@ -1,0 +1,13 @@
+{
+  "name": "trip-fund",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "validate:upgrade": "openzeppelin-upgrades-core validate out/build-info --contract src/TripFundV2.sol:TripFundV2 --reference src/TripFund.sol:TripFund --requireReference --unsafeAllow constructor"
+  },
+  "devDependencies": {
+    "@openzeppelin/contracts": "5.7.0",
+    "@openzeppelin/contracts-upgradeable": "5.7.0",
+    "@openzeppelin/upgrades-core": "1.46.0"
+  }
+}
